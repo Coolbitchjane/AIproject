@@ -1,8 +1,11 @@
 {
-  "name": "find-your-perfect-look-api",
+  "name": "find-your-perfect-look",
   "private": true,
   "type": "module",
-  "scripts": { "dev": "vercel dev", "check": "node --check server/app.js" },
+  "scripts": {
+    "dev": "npx vercel dev",
+    "check": "node --check server/app.js"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
@@ -11,5 +14,8 @@
     "pg": "^8.11.5",
     "zod": "^3.23.8"
   },
-  "devDependencies": { "vercel": "^37.0.0" }
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20"
+  }
 }
